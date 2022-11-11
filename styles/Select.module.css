@@ -1,0 +1,8 @@
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 95%;
+    max-width: 600px;
+    justify-content: space-between;
+}
