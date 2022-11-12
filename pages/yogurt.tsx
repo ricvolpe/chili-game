@@ -15,7 +15,7 @@ export default function Yogurt() {
   
   return (
     <div className='main'>
-      <Image src="/elements/yogurt.png" alt="Yogurt pot" width={200} height={140} />
+      <Image src="/imgs/yogurt.png" alt="Yogurt pot" width={200} height={140} />
       <p className='title' style={{color: '#06B6CC'}}>
         Yogurt
       </p>
