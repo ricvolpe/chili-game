@@ -23,9 +23,9 @@ body {
   width: auto;
   min-height: 100vh !important;
   min-width: 100vw !important;
-  padding: 4rem 0;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .title {

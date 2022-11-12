@@ -6,19 +6,23 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function FourChilies() {
   const { data, error } = useSWR('/api/staticdata?file=4chilies', fetcher);
-
-  if (error || !data) {
-    return null
+  let card;
+  if (error) {
+    card = 'Oh... what an imbarassing error!'
+  } else if (!data) {
+    card = ''
+  } else {
+    const parsedData = JSON.parse(data)
+    card = parsedData[Math.floor(Math.random() * parsedData.length)]
   }
-  const parsedData = JSON.parse(data)
-  const card = parsedData[Math.floor(Math.random() * parsedData.length)]
-  
   return (
     <div className='main'>
+      <div style={{textAlign: 'center'}}>
       <Image src="/imgs/4chillies.png" alt="Four chillies on fire" width={120} height={120} />
-      <p className='title' style={{color: '#EC174C'}}>
-        4 Chilies
-      </p>
+        <p className='title' style={{color: '#EC174C'}}>
+          4 Chilies
+          </p>
+      </div>
       <div className='card'>
         {card}
       </div>
