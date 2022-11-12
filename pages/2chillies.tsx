@@ -1,7 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import useSWR from 'swr'
 
-export default function TwoChillies() {
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+export default function TwoChilies() {
+  const { data, error } = useSWR('/api/staticdata?file=2chilies', fetcher);
+
+  if (error || !data) {
+    return null
+  }
+  const parsedData = JSON.parse(data)
+  const card = parsedData[Math.floor(Math.random() * parsedData.length)]
+  
   return (
     <div className='main'>
       <Image src="/imgs/2chillies.png" alt="Two chillies" width={65} height={85} />
@@ -9,7 +20,7 @@ export default function TwoChillies() {
         2 Chilies
       </p>
       <div className='card'>
-        Card text
+        {card}
       </div>
       <Link href="/select">
         <button style={{backgroundColor: '#FCB038'}}>

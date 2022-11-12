@@ -46,6 +46,7 @@ button {
   border-radius: 8px;
   width: 125px;
   padding: 3px;
+  cursor: pointer;
 }
 
 .card {
@@ -58,4 +59,5 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
