@@ -1,0 +1,18 @@
+.ruleList {
+    margin-right: 24px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
