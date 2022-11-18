@@ -66,6 +66,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
 .card {
   background-color: antiquewhite;
   width: 300px;
@@ -81,4 +85,17 @@ button {
 
 li+li {
   margin-top: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 26px 6px;
+  border-top: 1px solid #aaa;
 }

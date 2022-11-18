@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../components/foot'
 
 export default function Home() {
   const mainImgAltText = "A green chili and a red chili getting to know each other"
@@ -16,6 +17,7 @@ export default function Home() {
           <button>Play</button>
         </Link>
       </div>
+      <Footer />
     </div>
   )
 }
