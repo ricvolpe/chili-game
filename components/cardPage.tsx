@@ -9,12 +9,12 @@ export default function CardPage(props: {
   color: string,
   fileName: string,
   imgA11YLabel: string,
-  imgPath: string,
   imgHeight: number
   imgWidth: number,
+  path: string,
   title: string,
 }) {
-  const { color, fileName, imgA11YLabel, imgHeight, imgWidth, imgPath, title } = props;
+  const { color, fileName, imgA11YLabel, imgHeight, imgWidth, path, title } = props;
   const { data, error } = useSWR(`/api/staticdata?file=${fileName}`, fetcher);
   let card;
   if (error) {
@@ -29,17 +29,24 @@ export default function CardPage(props: {
     <div className='main'>
       <HomeLink />
       <div style={{ textAlign: 'center' }}>
-        <Image src={imgPath} alt={imgA11YLabel} width={imgWidth} height={imgHeight} />
+        <Image src={`/imgs/${path}.png`} alt={imgA11YLabel} width={imgWidth} height={imgHeight} />
         <p className='title' style={{ color: color }}>{title}</p>
       </div>
-      <div className='card'>
+      <div className='card quote'>
         {card}
       </div>
-      <Link href="/select">
-        <button style={{ backgroundColor: color }}>
-          Next card
-        </button>
-      </Link>
+      <div>
+        <Link href={`/${path}`}>
+          <button style={{ backgroundColor: color, marginRight: '10px' }}>
+            More {title}
+          </button>
+        </Link>
+        <Link href="/select">
+          <button style={{ backgroundColor: color }}>
+            Change Spice
+          </button>
+        </Link>
+      </div>
     </div>
   )
 }

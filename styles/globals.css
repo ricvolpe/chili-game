@@ -13,7 +13,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: Kollektif, Arial, Helvetica, sans-serif;
-  font-size: 24px;
 }
 
 .main {
@@ -42,9 +41,10 @@ body {
   text-decoration: none;
 }
 
-.paragrah {
+.quote {
   text-align: center;
   margin: 0px 24px;
+  font-size: 24px;
 }
 
 button {

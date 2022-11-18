@@ -8,7 +8,7 @@ export default function OneChili() {
       imgA11YLabel='One chili'
       imgHeight={85}
       imgWidth={40}
-      imgPath='/imgs/1chili.png'
+      path='1chili'
       title='1 Chili'
     />
   )

@@ -8,7 +8,7 @@ export default function Yogurt() {
       imgA11YLabel='Yogurt pot'
       imgHeight={140}
       imgWidth={200}
-      imgPath='/imgs/yogurt.png'
+      path='yogurt'
       title='Yogurt'
     />
   )

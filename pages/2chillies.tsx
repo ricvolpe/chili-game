@@ -8,7 +8,7 @@ export default function TwoChilies() {
       imgA11YLabel='Two chilies'
       imgHeight={85}
       imgWidth={65}
-      imgPath='/imgs/2chillies.png'
+      path='2chillies'
       title='2 Chilies'
     />
   )

@@ -24,7 +24,7 @@ export default function Select() {
           <Image src="/imgs/4chillies.png" alt="Four chillies on fire" width={120} height={120} />
         </Link>
       </div>
-      <p className={styles.yogurtText}>Or choose a yogurt question</p>
+      <p className='quote'>Or choose a yogurt question</p>
       <Link href="/yogurt">
         <Image src="/imgs/yogurt.png" alt="Yogurt pot" width={200} height={140} />
       </Link>

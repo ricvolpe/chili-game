@@ -6,14 +6,16 @@ export default function Home() {
   return (
     <div className='main'>
       <p className='title'>The Chili Game</p>
-      <p className='paragrah'>Leave behind bland small talk and spicy up getting to know each other</p>
+      <p className='quote'>Leave behind bland small talk and spicy up getting to know each other</p>
       <Image src="/imgs/main.png" alt={mainImgAltText} width={380} height={380} />
-      <Link href="/select">
-        <button>How to play</button>
-      </Link>
-      <Link href="/select">
-        <button>Play</button>
-      </Link>
+      <div>
+        <Link href="/select">
+          <button style={{ backgroundColor: '#76C42B', marginRight: '10px' }}>How to play</button>
+        </Link>
+        <Link href="/select">
+          <button>Play</button>
+        </Link>
+      </div>
     </div>
   )
 }
