@@ -38,8 +38,8 @@ export default function Select() {
         </div>
         <ul className={styles.ruleList}>
           <li>A person selects a spicy level and asks the question to someone else, instead of answering it</li>
-          <li>Any other person can follow-up with their own question to 'spice-up' the given answer</li>
-          <li>You can also <a href='https://forms.gle/ciLvTdWzojeEHQsPA' target='_blank'>submit</a> your follow-up questions to be included in the game</li>
+          <li>Any other person can follow-up with their own question to spice-up the given answer</li>
+          <li>You can also <a href='https://forms.gle/ciLvTdWzojeEHQsPA'>submit</a> your follow-up questions to be included in the game</li>
         </ul>
       </div>
       <Link href="/select">
