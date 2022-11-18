@@ -7,11 +7,12 @@ export default function Home() {
     <div className='main'>
       <p className='title'>The Chili Game</p>
       <Image src="/imgs/main.png" alt={mainImgAltText} width={380} height={380} />
-      <p>
-        A menu to reveal yourself
-      </p>
       <Link href="/select">
-        <button>Start</button>
+        <button>Play</button>
+      </Link>
+      <p>A menu to reveal yourself</p>
+      <Link href="/select">
+        <button>Play</button>
       </Link>
     </div>
   )

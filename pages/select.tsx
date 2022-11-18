@@ -1,11 +1,13 @@
 import styles from '../styles/Select.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import HomeLink from '../components/homeLink'
 
 export default function Select() {
   return (
     <div className='main'>
-      <p className='title' style={{color: '#FFDE59'}}>
+      <HomeLink />
+      <p className='title' style={{ color: '#FFDE59' }}>
         Choose a level of Spiciness
       </p>
       <div className={styles.options}>
@@ -23,9 +25,9 @@ export default function Select() {
         </Link>
       </div>
       <p className={styles.yogurtText}>Or choose a yogurt question</p>
-        <Link href="/yogurt">
-          <Image src="/imgs/yogurt.png" alt="Yogurt pot" width={200} height={140} />
-        </Link>
+      <Link href="/yogurt">
+        <Image src="/imgs/yogurt.png" alt="Yogurt pot" width={200} height={140} />
+      </Link>
     </div>
   )
 }

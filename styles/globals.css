@@ -33,20 +33,24 @@ body {
   /* width and color */
   font-family: Wedges;
   font-size: 56px;
-  color: red;
+  color: #EC174C;
   margin: 0;
   text-align: center;
+}
+
+.title a {
+  text-decoration: none;
 }
 
 button {
   font-family: Kollektif;
   font-size: 18px;
-  background-color: red;
+  background-color: #EC174C;
   color: white;
   border: none;
   border-radius: 8px;
   width: 125px;
-  padding: 3px;
+  padding: 4px;
   cursor: pointer;
 }
 
