@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <div className='main'>
       <p className='title'>The Chili Game</p>
+      <p className='paragrah'>Leave behind bland small talk and spicy up getting to know each other</p>
       <Image src="/imgs/main.png" alt={mainImgAltText} width={380} height={380} />
       <Link href="/select">
-        <button>Play</button>
+        <button>How to play</button>
       </Link>
-      <p>A menu to reveal yourself</p>
       <Link href="/select">
         <button>Play</button>
       </Link>

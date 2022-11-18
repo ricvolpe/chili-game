@@ -6,8 +6,8 @@ export default function Yogurt() {
       color='#06B6CC'
       fileName='yogurt'
       imgA11YLabel='Yogurt pot'
-      imgHeight={200}
-      imgWidth={140}
+      imgHeight={140}
+      imgWidth={200}
       imgPath='/imgs/yogurt.png'
       title='Yogurt'
     />
