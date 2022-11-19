@@ -99,6 +99,11 @@
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz"
   "version" "1.2.0"
 
+"@socialgouv/matomo-next@^1.4.0":
+  "integrity" "sha512-S+kNX7dwo/cL0VE7GWY8Gnf3t7aeXD4CzallRz9IEttjHJDJI2S8xOrcyaGimYpInr3nDNo+WqeYrafKUdsn1g=="
+  "resolved" "https://registry.npmjs.org/@socialgouv/matomo-next/-/matomo-next-1.4.0.tgz"
+  "version" "1.4.0"
+
 "@swc/helpers@0.4.11":
   "integrity" "sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw=="
   "resolved" "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.11.tgz"
@@ -1304,7 +1309,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next@13.0.3":
+"next@>= 9.5.5", "next@13.0.3":
   "integrity" "sha512-rFQeepcenRxKzeKlh1CsmEnxsJwhIERtbUjmYnKZyDInZsU06lvaGw5DT44rlNp1Rv2MT/e9vffZ8vK+ytwXHA=="
   "resolved" "https://registry.npmjs.org/next/-/next-13.0.3.tgz"
   "version" "13.0.3"

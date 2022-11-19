@@ -5,6 +5,7 @@ export default function Footer() {
         <footer>
             <p>If you enjoyed playing consider</p>
             <KofiButton color="#AAAAAA" title="donating" kofiID="F1F0GGMXJ" />
+            <p>and <a href='https://forms.gle/ciLvTdWzojeEHQsPA'>contributing new questions</a></p>
         </footer>
     )
 }
