@@ -2,6 +2,7 @@ import styles from '../styles/Select.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import HomeLink from '../components/homeLink'
+import Footer from '../components/foot'
 
 export default function Select() {
   return (
@@ -28,6 +29,7 @@ export default function Select() {
       <Link href="/yogurt">
         <Image src="/imgs/yogurt.png" alt="Yogurt pot" width={200} height={140} />
       </Link>
+      <Footer />
     </div>
   )
 }

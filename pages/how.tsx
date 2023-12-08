@@ -2,6 +2,7 @@ import styles from '../styles/How.module.css'
 import HomeLink from '../components/homeLink'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../components/foot'
 
 export default function Select() {
   return (
@@ -45,6 +46,7 @@ export default function Select() {
       <Link href="/select">
         <button>Play</button>
       </Link>
+      <Footer />
     </div>
   )
 }

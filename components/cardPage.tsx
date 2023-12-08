@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useSWR from 'swr'
 import HomeLink from './homeLink'
+import Footer from '../components/foot'
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -47,6 +48,7 @@ export default function CardPage(props: {
           </button>
         </Link>
       </div>
+      <Footer />
     </div>
   )
 }
