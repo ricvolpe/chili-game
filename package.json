@@ -20,7 +20,7 @@
     "eslint-config-next": "15.1.6",
     "kofi-button": "^1.1.1",
     "ncu": "^0.2.1",
-    "next": "15.1.6",
+    "next": "^15.1.9",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "sharp": "^0.33.5",
